@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<body>
+    <div class="calculus">
+        
+        <input type="number" id="num1"/>
+        <input type="text" id="plusmin"/>
+        <input type="number" id="num2" />
+        <button type="submit">Rēķināt</button>
+    </div>
+
+    <script>
+        const plusmin = document.getElementById("plusmin");
+        let num1 = document.getElementById("num1");
+        let num2 = document.getElementById("num2");
+        parseInt(num1.value)
+        parseInt(num2.value)
+        function getAnswer(){
+            addEventListener("click", getAnswer)
+        if (plusmin.value == "+"){
+            console.log(num1.value + num2.value);
+        }
+        else if (plusmin.value == "-"){
+            console.log(num1.value - num2.value);
+        }
+        else if (plusmin.value == "*"){
+            console.log(num1.value * num2.value);
+        }
+        else if (plusmin.value == "/"){
+            console.log(num1.value / num2.value);
+        }
+        else {
+            console.log("nav plus vai mīnuss")
+        }
+        }
+        console.log(getAnswer());
+        // result.innerHTML = ("Rezultāts: <span>" {getAnswer()} "<span>");
+       
+        //plus nestrāda ka vajag, taču citi strādā. Izvāda com
+    </script>
+</body>
+</html>
